@@ -43,3 +43,11 @@ npm install --save-dev @babel/core @babel/preset-env @babel/preset-react babel-l
 ```
 
 @babel/core contains babel related stuff, @babel/preset-env helps babel to transpile latest javascript syntaxes, @babel/preset-react helps babel to transpile React JSX code and babel-loader is used by webpack, so that all the code is passed to babel loader during bundling.
+
+---
+
+```
+npm install --save-dev style-loader css-loader
+```
+
+@babel/core contains babel related stuff, @babel/preset-env helps babel to transpile latest javascript syntaxes, @babel/preset-react helps babel to transpile React JSX code and babel-loader is used by webpack, so that all the code is passed to babel loader during bundling.

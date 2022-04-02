@@ -34,6 +34,13 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.css$/i,
+        // The style-loader injects CSS into the DOM.
+        // The css-loader interprets @import and url()
+        // like import/require() and will resolve them.
+        use: ["style-loader", "css-loader"],
+      },
     ],
   },
 };
