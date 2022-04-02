@@ -27,3 +27,11 @@ npm install --save-dev webpack webpack-cli webpack-dev-server
 Webpack is a tool that lets you compile JavaScript modules, also known as module bundlers.Given a large number of files, it generates a single file (or a few files) that run your app. Webpack-CLI provides the interface of options webpack uses in its configuration file.
 
 Webpack dev server provides the dev setup and builds everything on in-memory and serves the HTML page by automatically injecting the script(i.e. main.js mentioned on output parameter in webpack.config.js) on it when using with html-webpack-plugin
+
+---
+
+```
+npm install --save-dev html-webpack-plugin
+```
+
+This plugin will generate an HTML5 file in `dist/index.html` for you that includes all your webpack bundles in the body using script tags. https://webpack.js.org/plugins/html-webpack-plugin
