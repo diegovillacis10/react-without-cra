@@ -6,6 +6,7 @@ const path = require("path");
 // put is taken by output parameter
 
 module.exports = {
+  mode: "development",
   entry: "./src/index.js",
   output: {
     filename: "bundle.[hash].js",
@@ -21,16 +22,18 @@ module.exports = {
       filename: "index.html",
     }),
   ],
-  rules: [
-    {
-      test: /\.jsx?$/,
-      exclude: /node_modules/,
-      use: {
-        loader: "babel-loader",
-        options: {
-          presets: ["@babel/preset-env", "@babel/preset-react"],
+  module: {
+    rules: [
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env", "@babel/preset-react"],
+          },
         },
       },
-    },
-  ],
+    ],
+  },
 };
