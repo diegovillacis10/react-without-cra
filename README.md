@@ -35,3 +35,11 @@ npm install --save-dev html-webpack-plugin
 ```
 
 This plugin will generate an HTML5 file in `dist/index.html` for you that includes all your webpack bundles in the body using script tags. https://webpack.js.org/plugins/html-webpack-plugin
+
+---
+
+```
+npm install --save-dev @babel/core @babel/preset-env @babel/preset-react babel-loader
+```
+
+@babel/core contains babel related stuff, @babel/preset-env helps babel to transpile latest javascript syntaxes, @babel/preset-react helps babel to transpile React JSX code and babel-loader is used by webpack, so that all the code is passed to babel loader during bundling.

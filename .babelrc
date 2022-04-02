@@ -1,0 +1,9 @@
+// This file is a configuration file for babel whereas presets act
+// as a shareable set of Babel plugins and/or config options.
+
+{
+  "presets": ["@babel/preset-react", "@babel/preset-env"]
+}
+
+// Above rule will run for all the .js extension file and use the babel-loader
+// for those files using mentioned babel presets
