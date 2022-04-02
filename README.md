@@ -51,3 +51,7 @@ npm install --save-dev style-loader css-loader
 ```
 
 @babel/core contains babel related stuff, @babel/preset-env helps babel to transpile latest javascript syntaxes, @babel/preset-react helps babel to transpile React JSX code and babel-loader is used by webpack, so that all the code is passed to babel loader during bundling.
+
+## BIG THANKS!:
+- [Create React App without create-react-app](https://dev.to/riddhiagrawal001/create-react-app-without-create-react-app-2lgd)
+- [Basic Setup for React application without CRA](https://medium.com/@harshverma04111989/basic-setup-for-react-application-without-cra-8f885d9dbbf)
